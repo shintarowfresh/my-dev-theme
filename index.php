@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * 最終的に参照されるテンプレート
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -8,7 +8,6 @@
  * e.g., it puts together the home page when no home.php file exists.
  *
  */
-
 get_header(); ?>
 
 <?php get_sidebar(); ?>
