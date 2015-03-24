@@ -1,0 +1,11 @@
+#ファイル
+*.DS_store
+*.scssc
+*.xml
+*.command
+
+#ディレクトリ
+.sass-cache/
+node_modules/
+
+#ワイルドカード
