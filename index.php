@@ -1,31 +1,16 @@
 <?php
 /**
- * The template for displaying the header
+ * The main template file
  *
- * Displays all of the head element and everything up until the "site-content" div.
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * e.g., it puts together the home page when no home.php file exists.
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
  */
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
 
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title><?php wp_title(); ?></title>
+get_header(); ?>
 
-<?php wp_head(); ?>
-</head>
+<?php get_sidebar(); ?>
 
-<body <?php body_class(); ?>>
-
-<div id="wrapper" class="wrapper">
-
-</div><!--/.wrapper-->
-
-<?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>
